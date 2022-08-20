@@ -1,0 +1,92 @@
+<!--FRONT-->
+<div class="prettify-flashcard">
+    <div class="prettify-field prettify-field--front">
+        {{edit:English}}
+    </div>
+    {{#Tags}}
+        <div class="prettify-tags">
+            {{clickable:Tags}}
+        </div>
+    {{/Tags}}
+</div>
+  
+<script>
+    // Split hierarchical tags
+    var tagsContainerEl = document.querySelectorAll('.prettify-tags > *')
+    if (tagsContainerEl.length > 0) {
+      var tags = []
+      tagsContainerEl.forEach((tagEl) => {
+        tagEl.classList.add('prettify-tag')
+        tags.push(tagEl.innerHTML)
+        tags.forEach((tag) => {
+          var childTag = tag.split('::').filter(Boolean)
+          tagEl.innerHTML = childTag[childTag.length - 1].trim()
+        })
+      })
+    } else {
+      tagsContainerEl = document.querySelector('.prettify-tags')
+      var tags = tagsContainerEl.innerHTML.split(' ').filter(Boolean)
+      var html = ''
+      tags.forEach((tag) => {
+        var childTag = tag.split('::').filter(Boolean)
+        html +=
+          "<span class='prettify-tag'>" +
+          childTag[childTag.length - 1] +
+          '</span>'
+      })
+      tagsContainerEl.innerHTML = html
+    }
+</script>  
+
+<!--BACK-->
+<div class="prettify-flashcard">
+    <div class="prettify-field prettify-field--front">
+        {{edit:English}}
+    </div>
+    {{#Tags}}
+        <div class="prettify-tags">
+            {{clickable:Tags}}
+        </div>
+    {{/Tags}}
+  
+    <hr class="prettify-divider prettify-divider--answer" id="answer" />
+  
+    <div class="prettify-field prettify-field--back">
+        {{edit:Telugu}}
+    </div>
+    <div class="prettify-field prettify-field--back">
+        {{edit:Romanization}}
+    </div>
+    <div class="prettify-field prettify-field--back">
+        {{edit:Audio}}
+    </div>
+</div>
+  
+<script>
+    // Split hierarchical tags
+    var tagsContainerEl = document.querySelectorAll('.prettify-tags > *')
+    if (tagsContainerEl.length > 0) {
+      var tags = []
+      tagsContainerEl.forEach((tagEl) => {
+        tagEl.classList.add('prettify-tag')
+        tags.push(tagEl.innerHTML)
+        tags.forEach((tag) => {
+          var childTag = tag.split('::').filter(Boolean)
+          tagEl.innerHTML = childTag[childTag.length - 1].trim()
+        })
+      })
+    } else {
+      tagsContainerEl = document.querySelector('.prettify-tags')
+      var tags = tagsContainerEl.innerHTML.split(' ').filter(Boolean)
+      var html = ''
+      tags.forEach((tag) => {
+        var childTag = tag.split('::').filter(Boolean)
+        html +=
+          "<span class='prettify-tag'>" +
+          childTag[childTag.length - 1] +
+          '</span>'
+      })
+      tagsContainerEl.innerHTML = html
+    }
+</script>
+  
