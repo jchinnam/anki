@@ -25,7 +25,7 @@ learn about note types, understand what fields will be necessary on the cards I 
 ## add-ons
 - [Minimal Theme](https://ankiweb.net/shared/info/867316254)
 - [Migaku Anki Add-on](https://ankiweb.net/shared/info/1846879528)
-- [Review Heatmap](https://ankiweb.net/shared/info/1771074083), color scheme: ice, calendar mode: continuous timeline
+- [Review Heatmap](https://ankiweb.net/shared/info/1771074083), color scheme: magenta, calendar mode: continuous timeline
 
 ## debugging
 

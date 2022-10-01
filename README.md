@@ -6,6 +6,6 @@ see [`cards/`](/cards/) for note type html and css
 
 ## docs
 - [`setup.md`](/setup.md) for anki installation and customization notes
-- [`notes/grammar.md`](/notes/grammar.md) for grammar notes from various resources chronologically
+- [`notes/grammar.md`](/notes/grammar.md) for ongoing grammar notes from various resources
 
 full notes in notion, with the intention of making public in some form one day
