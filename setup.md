@@ -23,11 +23,21 @@ learn about note types, understand what fields will be necessary on the cards I 
 - cloned `prettify-minimal-basic_reverse` to create my card templates (one with a reverse and one with an optional reverse)
 
 ## add-ons
-- [Minimal Theme](https://ankiweb.net/shared/info/867316254)
-- [Migaku Anki Add-on](https://ankiweb.net/shared/info/1846879528)
-- [Review Heatmap](https://ankiweb.net/shared/info/1771074083), color scheme: magenta, calendar mode: continuous timeline
 
-## debugging
+### [Review Heatmap](https://ankiweb.net/shared/info/1771074083)
+- from widget Options, set color scheme: magenta
+- from widget Options, set calendar mode: continuous timeline
+
+### [Minimal Theme](https://ankiweb.net/shared/info/867316254)
+- in add-on config, set `"remove editor button: audio recording": false` in order to make audio recording button available when creating cards, see [config](/add-ons/867316254_minimal_theme/config.json)
+
+### [Migaku Anki Add-on](https://ankiweb.net/shared/info/1846879528)
+- changed `Grading.button_color` response in `reviewer.py` to customize button text for `Good` and `Again` buttons, see [reviewer.py](/add-ons/1846879528_migaku/reviewer.py)
+
+### [Large and Colorful Buttons](https://ankiweb.net/shared/info/1829090218)
+- from add-on, view files and alter `user_bottom_buttons.css` to change `background-color` for `Good` and `Again` buttons, as well as `height`, `font-size`, and `margin` on all buttons; see [user_buttom_buttons.css](/add-ons/1829090218_large_and_colorful_buttons/user_bottom_buttons.css)
+
+## troubleshooting
 
 ### delete review history before a timestamp
 from [this reddit comment](https://www.reddit.com/r/Anki/comments/d780ko/comment/f120bki/?utm_source=share&utm_medium=web2x&context=3)
