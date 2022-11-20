@@ -1,0 +1,13 @@
+{
+    "constantly-show-addon": "false",
+    "manually-forgot-color": "white",
+    "only-show-learning-reviews-in-learning-stage": "false",
+    "rated-again-color": "#deb7c1",
+    "rated-easy-color": "#006344",
+    "rated-good-color": "#d0eab7",
+    "rated-hard-color": "#D8A700",
+    "show-label": "false",
+    "size": "100%",
+    "vertical-position": "top",
+    "width": "inherit"
+}

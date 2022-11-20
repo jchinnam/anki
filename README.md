@@ -1,11 +1,8 @@
 # anki
-telugu language learning notes and tools
+[`setup.md`](/setup.md) for installation and customization notes
 
 ## cards
 see [`cards/`](/cards/) for note type html and css
 
-## docs
-- [`setup.md`](/setup.md) for anki installation and customization notes
-- [`grammar.md`](/grammar.md) for ongoing grammar notes from various resources
-
-full notes in notion, with the intention of making public in some form one day
+## add-ons
+see [`add-ons/`](/add-ons/) for changes to add-on configs and files, with explanations in [`setup.md#add-ons`](/setup.md#add-ons)

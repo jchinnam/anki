@@ -22,6 +22,12 @@ learn about note types, understand what fields will be necessary on the cards I 
 - new note type(s), THEME-NOTETYPE are created automatically
 - cloned `prettify-minimal-basic_reverse` to create my card templates (one with a reverse and one with an optional reverse)
 
+## theme & colors
+going for a clean minimalist look
+- using [minimal theme add-on](/setup.md#minimal-themehttpsankiwebnetsharedinfo867316254) for dashboard buttons and clean UI
+- [migaku add-on](/setup.md#migaku-anki-add-onhttpsankiwebnetsharedinfo1846879528) simplifies buttons down to only `again` and `good`
+- using hex codes `#deb7c1` for again & `#d0eab7` for good across multiple add-ons
+
 ## add-ons
 
 ### [Review Heatmap](https://ankiweb.net/shared/info/1771074083)
@@ -29,13 +35,16 @@ learn about note types, understand what fields will be necessary on the cards I 
 - from widget Options, set calendar mode: continuous timeline
 
 ### [Minimal Theme](https://ankiweb.net/shared/info/867316254)
-- in add-on config, set `"remove editor button: audio recording": false` in order to make audio recording button available when creating cards, see [config](/add-ons/867316254_minimal_theme/config.json)
+- add-on > config: set `"remove editor button: audio recording": false` in order to make audio recording button available when creating cards, see [config](/add-ons/867316254_minimal_theme/config.json)
 
 ### [Migaku Anki Add-on](https://ankiweb.net/shared/info/1846879528)
-- changed `Grading.button_color` response in `reviewer.py` to customize button text for `Good` and `Again` buttons, see [reviewer.py](/add-ons/1846879528_migaku/reviewer.py)
+- add-on > view files: changed `Grading.button_color` response in `reviewer.py` to customize button text for `Good` and `Again` buttons, see [reviewer.py](/add-ons/1846879528_migaku/reviewer.py)
 
 ### [Large and Colorful Buttons](https://ankiweb.net/shared/info/1829090218)
-- from add-on, view files and alter `user_bottom_buttons.css` to change `background-color` for `Good` and `Again` buttons, as well as `height`, `font-size`, and `margin` on all buttons; see [user_buttom_buttons.css](/add-ons/1829090218_large_and_colorful_buttons/user_bottom_buttons.css)
+- add-on > view files: alter `user_bottom_buttons.css` to change `background-color` for `Good` and `Again` buttons, as well as `height`, `font-size`, and `margin` on all buttons; see [user_buttom_buttons.css](/add-ons/1829090218_large_and_colorful_buttons/user_bottom_buttons.css)
+
+### [See Previous Card Ratings in Reviewer](https://ankiweb.net/shared/info/1906641654)
+- add-on > config: change `vertical-position` to `top` and set colors for `rated-again-color` and `rated-good-color` to match my scheme, see [config](/add-ons/1906641654_previous_card_ratings/config.json)
 
 ## troubleshooting
 
