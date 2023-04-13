@@ -46,6 +46,13 @@ going for a clean minimalist look
 ### [See Previous Card Ratings in Reviewer](https://ankiweb.net/shared/info/1906641654)
 - add-on > config: change `vertical-position` to `top` and set colors for `rated-again-color` and `rated-good-color` to match my scheme, see [config](/add-ons/1906641654_previous_card_ratings/config.json)
 
+### [Reset Ease Automatically](https://ankiweb.net/shared/info/12081346)
+this will reset cards to 250 every time I review on desktop or Tools > Reset Ease > Reset Ease
+- Tools > Reset Ease > Preferences: set lower and upper bound for deck to 250
+- Note: Migaku > Reset Card Ease also sets all cards to 250 but has to be done manually
+- Note: also considered [Reset Ease](https://ankiweb.net/shared/info/947935257), [Set Card Ease](https://ankiweb.net/shared/info/1387847178) but they have to be done manually
+- Note: also considered [Auto Ease Factor](https://ankiweb.net/shared/info/1672712021) but unclear how that change the algorithm
+
 ## troubleshooting
 
 ### delete review history before a timestamp
