@@ -6,18 +6,19 @@ the deck is made up of optional reverse cards, where the front is in english and
 
 see [`cards/`](/cards/) for note type html and css
 
+#### adopting my deck
+if I sent you my telugu deck and you're looking to convert it from english -> telugu (optional reverse) to telugu -> english (basic) follow these steps:
+- sync your existing anki decks
+- file > import deck
+- notes > manage note types
+- clone note type: add > select “english → telugu” type > clone > name “telugu → english”
+- select “telugu → english” > "cards..."
+- flip front and back by manually updating the html templates, then save
+- select all cards in deck
+- switch note type to "telugu → english"
+- notes > manage note types
+- select “telugu → english” > "cards..."
+- select card type "card 2" > remove note type
+
 ## add-ons
 see [`add-ons/`](/add-ons/) for changes to add-on configs and files, with explanations in [`setup.md#add-ons`](/setup.md#add-ons)
-
-## how to
-### add an optional reverse card
-- browse for card
-- add any text to the optional `Add Reverse` field
-
-### delete an optional reverse card
-from [this anki forum](https://forums.ankiweb.net/t/basic-and-optional-reverse-not-working-as-expected/9896)
-- browse for card
-- remove the text from the optional `Add Reverse` field
-- Tools > Empty cards > Delete
-
-note: wouldn't recommend this for continuity purposes, only if you're curating this deck for yourself

@@ -28,25 +28,38 @@ going for a clean minimalist look
 - [migaku add-on](/setup.md#migaku-anki-add-onhttpsankiwebnetsharedinfo1846879528) simplifies buttons down to only `again` and `good`
 - using hex codes `#deb7c1` for again & `#d0eab7` for good across multiple add-ons
 
+## how to
+### add an optional reverse card
+- browse for card
+- add any text to the optional `Add Reverse` field
+
+### delete an optional reverse card
+from [this anki forum](https://forums.ankiweb.net/t/basic-and-optional-reverse-not-working-as-expected/9896)
+- browse for card
+- remove the text from the optional `Add Reverse` field
+- Tools > Empty cards > Delete
+
+note: wouldn't recommend this for continuity purposes, only if you're curating this deck for yourself
+
 ## add-ons
 
-### [Review Heatmap](https://ankiweb.net/shared/info/1771074083)
+### [review heatmap](https://ankiweb.net/shared/info/1771074083)
 - from widget Options, set color scheme: magenta
 - from widget Options, set calendar mode: continuous timeline
 
-### [Minimal Theme](https://ankiweb.net/shared/info/867316254)
+### [minimal theme](https://ankiweb.net/shared/info/867316254)
 - add-on > config: set `"remove editor button: audio recording": false` in order to make audio recording button available when creating cards, see [config](/add-ons/867316254_minimal_theme/config.json)
 
-### [Migaku Anki Add-on](https://ankiweb.net/shared/info/1846879528)
+### [migaku anki add-on](https://ankiweb.net/shared/info/1846879528)
 - add-on > view files: changed `Grading.button_color` response in `reviewer.py` to customize button text for `Good` and `Again` buttons, see [reviewer.py](/add-ons/1846879528_migaku/reviewer.py)
 
-### [Large and Colorful Buttons](https://ankiweb.net/shared/info/1829090218)
+### [large and colorful buttons](https://ankiweb.net/shared/info/1829090218)
 - add-on > view files: alter `user_bottom_buttons.css` to change `background-color` for `Good` and `Again` buttons, as well as `height`, `font-size`, and `margin` on all buttons; see [user_buttom_buttons.css](/add-ons/1829090218_large_and_colorful_buttons/user_bottom_buttons.css)
 
-### [See Previous Card Ratings in Reviewer](https://ankiweb.net/shared/info/1906641654)
+### [see previous card ratings in reviewer](https://ankiweb.net/shared/info/1906641654)
 - add-on > config: change `vertical-position` to `top` and set colors for `rated-again-color` and `rated-good-color` to match my scheme, see [config](/add-ons/1906641654_previous_card_ratings/config.json)
 
-### [Reset Ease Automatically](https://ankiweb.net/shared/info/12081346)
+### [reset ease automatically](https://ankiweb.net/shared/info/12081346)
 this will reset cards to 250 every time I review on desktop or Tools > Reset Ease > Reset Ease
 - Tools > Reset Ease > Preferences: set lower and upper bound for deck to 250
 - Note: Migaku > Reset Card Ease also sets all cards to 250 but has to be done manually
@@ -68,8 +81,9 @@ mw.col.modSchema(False)
 - verify db history
 - sync (upload) to anki web
 
-### deleting a optional reverse card
-from [this anki forum](https://forums.ankiweb.net/t/basic-and-optional-reverse-not-working-as-expected/9896)
-- browse for card
-- remove the text from the optional field
-- Tools > Empty cards > Delete
+### getting stuck on the update screen
+from [this reddit thread](https://www.reddit.com/r/medicalschoolanki/comments/vq28bf/stuck_on_this_screen_wont_let_me_click_okay_or/)
+- close Anki
+- hold shift while reopening (this avoids loading add ons)
+- do the update and then close Anki
+- reopen normally
